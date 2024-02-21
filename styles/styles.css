@@ -1,0 +1,97 @@
+#backgroundVideo {
+    width: 100%;
+    top: 35px;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#content {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#buttons{
+    text-align: center;
+    color: white;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+#mainTitle {
+    font-size: 4em;
+    font-family: ModernWarfare, serif;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    margin: 0;
+}
+
+#belowTitle{
+    font-family: ModernWarfare, serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.option {
+    margin: 0 20px;
+}
+
+.option a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.option a:hover {
+    color: black;
+    background-color: white;
+}
+
+#purchaseButton button {
+    background-color: black;
+    background-image: radial-gradient(circle, #1e90ff 1%, transparent 1%);
+    background-size: 10px 10px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#purchaseButton button:hover {
+    background-color: #1e90ff;
+    box-shadow: 0 0 10px #1e90ff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#bodyBackground{
+    background-color: black;
+    margin: 0;
+}
+
+
